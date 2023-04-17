@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox fx:id="mainVboxLogin" alignment="CENTER" prefHeight="660.0" prefWidth="860.0" spacing="20" style="-fx-background-image: url(backgroundImage.jpg); -fx-background-size: cover; -fx-background-repeat: no-repeat; -fx-background-position: center center;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.clyderunners.LoginController">
+   <HBox alignment="TOP_CENTER">
+      <Label fx:id="title" alignment="CENTER" style="-fx-font-size: 34px;" text="Welcome to Glasgow Clyde Runners Club" textAlignment="CENTER" HBox.hgrow="ALWAYS">
+
+      </Label>
+      <VBox.margin>
+         <Insets bottom="100.0" />
+      </VBox.margin>
+
+
+   </HBox>
+   <VBox alignment="CENTER">
+
+      <Label text="Enter Password">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <PasswordField fx:id="passwordField" maxWidth="-Infinity" onKeyPressed="#handelOnKeyPressed" prefHeight="26.0" prefWidth="167.0">
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin></PasswordField>
+      <Label fx:id="msg" style="-fx-font-size:9 ;" text=""/>
+      <Button fx:id="loginButton" onAction="#loginFromUI" text="Login">
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin></Button>
+
+   </VBox>
+
+   <padding>
+      <Insets bottom="200.0" />
+   </padding>
+</VBox>

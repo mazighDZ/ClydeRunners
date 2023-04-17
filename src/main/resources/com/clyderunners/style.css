@@ -1,0 +1,28 @@
+
+#mainVbox{
+  -fx-background-size: cover;
+  -fx-background-repeat: no-repeat;
+  -fx-background-position: center center;
+
+}
+
+
+#title {
+    -fx-font-size: 52px;
+    -fx-text-fill:linear-gradient(to left, #A7CFDF, #23538A);
+    -fx-webkit-background-clip: text;
+    -fx-webkit-text-fill-color: transparent;
+    -fx-font-family: "Eras Bold ITC";
+    -fx-font-style: italic;
+
+}
+
+
+#readFile,#sortLF,#sortFL,#findFastest,#findLowest,#search,#timeOccurrence,#exit{
+    -fx-font-style: italic;
+    -fx-font-weight:bold;
+    -fx-padding-left: 10px;
+    -fx-font-size: 14px;
+   -fx-font-family: "Eras Bold ITC";
+
+}
